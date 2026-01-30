@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<HEAD>
+<meta charset="utf-8" />
+<TITLE>Simple Notes App</TITLE>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <style>
+    .done{
+    text-decoration: line-through;
+    color: gray;
+    }
+    </style>
+</HEAD>
+<BODY class="bg-light">
+    <div class="container mt-5" style="max-width: 500px;">
+        <h2 class="text-center mb-4">Simple Notes App</h2>
+
+        <input type="text" id="searchInput" class="form-control mb-2" placeholder="Search..." />
+
+        <div class="card p-3 mb-3">
+            <input type="text" id="noteInput" class="form-control mb-2" placeholder="Write a task..." />
+            <button id="addNote" class="btn btn-primary">Add Task</button>
+        </div>
+        <ul class="list-group" id="notesList"></ul>
+    </div>
+    <script src="script.js"></script>
+
+
+</BODY>
+</HTML>
